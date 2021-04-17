@@ -21,7 +21,7 @@ const start = async () => {
     console.error(error);
   }
 
-  app.listen(5000, () => {
+  app.listen(process.env.PORT || 5000, () => {
     console.log("task-manager-service:5000");
   });
 };
