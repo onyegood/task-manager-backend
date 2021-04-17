@@ -4,7 +4,7 @@
     "description": "Task Manager Service",
     "main": "index.js",
     "scripts": {
-        "start": "web:ts-node-dev src/index.ts",
+        "start": "ts-node-dev src/index.ts",
         "test": "jest --watchAll --coverage --no-cache",
         "test:ci": "jest"
     },
@@ -24,6 +24,8 @@
         "@types/express": "^4.17.6",
         "@types/jsonwebtoken": "^8.5.0",
         "@types/mongoose": "^5.7.29",
+        "@types/compression": "^1.7.0",
+        "@types/cors": "^2.8.10",
         "compression": "^1.7.4",
         "cookie-session": "^1.4.0",
         "cors": "^2.8.5",
@@ -38,8 +40,6 @@
         "typescript": "^3.9.6"
     },
     "devDependencies": {
-        "@types/compression": "^1.7.0",
-        "@types/cors": "^2.8.10",
         "@types/jest": "^26.0.4",
         "@types/supertest": "^2.0.10",
         "jest": "^26.1.0",
